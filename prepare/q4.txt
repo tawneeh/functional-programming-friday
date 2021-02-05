@@ -24,7 +24,7 @@ Can't change string to an array...
 function allUnique(string) {
   for (i = 0; i < string.length; i++) {
     ch = string[i];
-      if ch === another character then --> 
+      if ch === another character then
       return false;
     } else {
       return true;
