@@ -6,3 +6,27 @@ Output: false
 
 Input: "copyright"
 Output: true
+
+pseudo code: 
+
+function allUnique(string) {
+  for (each element in the string) // iterate through a string
+    if (element is only present once) {
+      return true; 
+    } else {
+      return
+        false
+    }
+}
+
+Can't change string to an array...
+
+function allUnique(string) {
+  for (i = 0; i < string.length; i++) {
+    ch = string[i];
+      if ch === another character then --> 
+      return false;
+    } else {
+      return true;
+  }
+}
