@@ -12,6 +12,11 @@ function deduping(array) {
   return [...new Set(array)];
 }
 
+let noDup = [... new Set(arr)];
+
+Set Documentation
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+
 * using .filter()
 let array = [7, 9, "hi", 12, "hi", 7, 53];
 let unique = array.filter((item, index) => array.indexOf(item) === index);
