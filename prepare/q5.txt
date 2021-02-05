@@ -12,6 +12,16 @@ You may implement any of the above algorithms (or your own) to solve the problem
 Input: [9, 2, 7, 12]
 Output: [2, 7, 9, 12]
 
-I want to use bubble sort!
+I want to use selection sort!
 
 https://medium.com/javascript-in-plain-english/simple-sorting-algorithms-in-javascript-57d512ceaf5d
+
+// I'm going to be using a swap helper method today since array sorting algorithms mainly deal in swapping array elements in various ways. 
+
+function swap (arr, i1, i2) {
+    let temp = arr[i1];
+    arr[i1] = arr[i2];
+    arr[i2] = temp;
+}
+
+// Then, use my selectionSort. Which 'selects' the smallest element and moves it to index 0. bubbleSort would be another good option for this as it does the same thing in reverse.
