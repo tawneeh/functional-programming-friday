@@ -5,3 +5,21 @@ You may not use the replace() method or regular expressions to solve this proble
 
 Input: "Jasmine Ann Jones"
 Output: "Jasmine%20Ann%20Jones"
+
+let string = "Jasmine Ann Jones";
+
+function urlThisString(string) {
+  let arr = string.split('');
+  for(let i = 0; i < arr.length; i++) {
+    if (arr[i] === " ") {
+      arr[i] = "%20";
+    } else {
+      return arr.join('');
+    }
+  }
+  return arr.join('');
+}
+
+// upon testing, this doesn't actually change anything even though I'm attempting to reassign any space found afer looping as "%20" on line 15. no errors thrown in the console
+
+let trimmed = string.trim(); -- extra white space edge case 
