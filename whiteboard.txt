@@ -3,4 +3,48 @@ Tawnee Harris
 
 Functional Programming with JavaScript Independent Project
 
-Prompt:
+Prompt: write an algorithm that compresses repeated characters in a string. 
+shows how many times the character is repeated. if the letter is only shown once then just display the letter
+
+Input: "aaabccdddda"
+Output: "3ab2c4da"
+
+edge cases - input different data type. capital letters treated like a different character
+
+tools:
+JavaScript
+for loop
+counter 
+if / else --- if this character is repeated ++ counter
+	else --- return that character
+
+pseudo code:
+
+function compress(string) {
+	let compressedStr = "";
+  let counter = 0;
+  for (through the entire string one character)
+  
+  if (this character is repeated string[i] counter++ )
+  else (return the character)
+  
+  return compressedStr;
+}
+
+code:
+
+function compress(string) { // "a"
+	let compressedStr = "";
+	let counter = 0;
+  for (let i = 0; i < string.length; i++) { 
+  	counter++;
+    if (string[i] != string[i + 1] {
+    	if (counter > 1) {
+      	// compressedStr = counter + string[i];
+      } else {
+      	compressedStr += string[i]
+    counter = 0;
+    }
+  }
+  return compressedStr;
+}
